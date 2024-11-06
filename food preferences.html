@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preferences Form</title>
+</head>
+<body>   
+<!--
+Author: Kimberly Garrett
+Date: October 25, 2024
+-->
+<header>
+    <h2>Kimberly Garrett</h2>
+    <p>Aspiring Software Developer with a passion for creating dynamic, user-friendly software applications.  Experienced in HTML.</p>
+</header>
+
+<h1> Food Preferences</h1>
+    
+<form method="post">
+
+    <div id="form_checkbox">
+        <fieldset>
+            <legend> Select your dietary preferences:</legend>
+            <label>
+                <input type="checkbox" name="preference" value="Vegetarian"> Vegetarian
+            </label>
+
+            <label>
+                <input type="checkbox" name="preference" value="Keto"> Keto
+            </label>
+
+            <label>
+                <input type="checkbox" name="preference" value="Paleo"> Paleo
+            </label><br>
+        </fieldset>
+    </div>
+    <br>
+    <div id="form_radio">
+        <fieldset>
+            <legend>Select your favorite cuisine:</legend>
+            <label>
+                <input type="radio" name="food" value="Mexican"> Mexican
+            </label>
+
+            <label>
+                <input type="radio" name="food" value="Asian"> Asian
+            </label>
+                
+            <label> 
+                <input type="radio" name="food" value="Soul Food"> Soul Food
+            </label>
+        </fieldset>
+    </div>
+    <br>
+    <div id="form_input">
+        <label for="favorite_food">Favorite Food</label>
+            <input type="text" id="favorite_food" name= "favorite_food" placeholder="Enter your favorite food">   
+    </div>
+    
+    <div id="form_textarea">
+        <h3>Additional Notes:</h3>
+        <textarea name="notes" placeholder="Add any specific dietary requirements or comments." rows="4" cols="50"></textarea>
+    </div>
+    
+    <div id="meals">
+        <label for="meals_per_day">Number of Meals Per Day:</label>
+        <input type="number" id="meals_per_day" name="meals_per_day">
+         <br>
+    </div>
+    
+    <div>
+        <label for="favorite_dish">Favorite Dish:</label>
+        <input type="text" id="favorite_dish" name="favorite_dish" placeholder="Max 10 characters" maxlength="10">
+    </div>
+    
+    <div>
+        <label for="unavailable_food">Unavailable Food Item:</label>
+        <input type="text" id="unavailable_food" name="unavailable_food" placeholder="Out of Stock" disabled>
+    </div><br>
+    
+    <div>
+        <label for="readonly_information"> Read-only Information:</label>
+        <input type="text" id="readonly_information" name="readonly_information" placeholder="You can only read this information">
+    </div>
+
+    <div class="form-group">
+        <label for="calories">Total Calories Consumed:</label><br>
+        <input type="range" id="calories" name="calories" min="0" max="1000" value="0">
+        <input type="text" id="caloriestext" name="calories-text">
+            Calories
+    </div>
+  
+    <div id="form_select_option">
+        <label for="beverage">Preferred Beverage:</label>
+        <select name="beverage" id="beverage">
+            <option value="Water">Water</option>
+            <option value="Soda">Soda</option>
+            <option value="Tea">Tea</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="alcoholic_beverage"> Alcoholic Beverage</label>
+        <select name="alcoholic_beverage" id="alcoholic_beverage">
+            <option value="mocktails">Mocktails</option>
+            <option value="coolers">Coolers</option>
+            <option value="wine">Wine</option>
+        </select>    
+    </div>
+
+    <div id="submit_button">
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+
+</body>
+</html>
